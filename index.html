@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/icon-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <title>BarberDev</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#"><img src="assets/icon-logo.png" alt="logo-barberdev">BarberDev</a>
+        </div>
+
+        <div class="navBar">
+            <nav>
+                <a href="#hero">Início</a>
+                <a href="#services">Serviços</a>
+                <a href="#testimonials">Depoimentos</a>
+                <a href="#contact">Contato</a>
+                <a class="header-button" href="https://wa.me/16992015035?text=Olá, gostaria de agendar um horário com a barberia" target="_blank">Agende seu Horário</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>BarberDev</h2>
+                <p>Cortes de cabelo e barba com estilo e qualidade.</p>
+                <a class="hero-button" href="https://wa.me/16992015035?text=Olá, gostaria de agendar um horário com a barberia" target="_blank">Agende seu Horário</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2 class="title">Nossos Serviços</h2>
+
+        <div class="gridCardServices">
+            <div class="item">
+                <div class="item-content">
+                    <img src="assets/icon-service01.png" alt="iconService01">
+                    <span>Corte de Cabelo</span>
+                    <p>Inclui lavagem corte e finalização</p>
+                    <span class="price">R$ 50,00</span>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-content">
+                    <img src="assets/icon-service02.png" alt="iconService01">
+                    <span>Barba</span>
+                    <p>Modelagem e aparo da barba.</p>
+                    <span class="price">R$ 30,00</span>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-content">
+                    <img src="assets/icon-service03.png" alt="iconService01">
+                    <span>Pendeados</span>
+                    <p>Diversos estilos para ocasiões especiais.</p>
+                    <span class="price">R$ 40,00</span>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-content">
+                    <img src="assets/icon-service04.png" alt="iconService01">
+                     <span>Tratamentos Capilares</span>
+                    <p>Hidratação e revitalização dos fios.</p>
+                    <span class="price">R$ 60,00</span>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-content">
+                    <img src="assets/icon-service05.png" alt="iconService01">
+                    <span>Pacotes de Cuidados</span>
+                    <p>Combinações de serviços com desconto.</p>
+                    <span class="price">Preços Variados</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <h2 class="title">Depoimentos</h2>
+        
+        <div class="gridCardTestimonials">
+            <div class="item">
+                <div class="stars">
+                    <img src="https://img.icons8.com/windows/FAC738/30/star--v1.png" alt="star--v1"/><img src="https://img.icons8.com/   windows/FAC738/30/star--v1.png" alt="star--v1"/><img src="https://img.icons8.com/windows/FAC738/30/star--v1.png" alt="star--v1"/><img src="https://img.icons8.com/windows/FAC738/30/star--v1.png" alt="star--v1"/><img src="https://img.icons8.com/windows/FAC738/30/star--v1.png" alt="star--v1"/>
+                </div>
+
+                <div class="item-content">
+                    <p>"Melhor barbearia da cidade! Atendimento impecável e profissionais de primeira. Recomendo demais"</p>
+                    <span>João P.</span>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="stars">
+                    <img src="https://img.icons8.com/windows/FAC738/30/star--v1.png" alt="star--v1"/><img src="https://img.icons8.com/   windows/FAC738/30/star--v1.png" alt="star--v1"/><img src="https://img.icons8.com/windows/FAC738/30/star--v1.png" alt="star--v1"/><img src="https://img.icons8.com/windows/FAC738/30/star--v1.png" alt="star--v1"/><img src="https://img.icons8.com/windows/FAC738/30/star--v1.png" alt="star--v1"/>
+                </div>
+
+                <div class="item-content">
+                    <p>“O atendimento é profissional do início ao fim. O barbeiro explica, mostra opções e deixa tudo do jeito que você imagina. Vale cada centavo!”</p>
+                    <span>Marcio</span>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="stars">
+                    <img src="https://img.icons8.com/windows/FAC738/30/star--v1.png" alt="star--v1"/><img src="https://img.icons8.com/   windows/FAC738/30/star--v1.png" alt="star--v1"/><img src="https://img.icons8.com/windows/FAC738/30/star--v1.png" alt="star--v1"/><img src="https://img.icons8.com/windows/FAC738/30/star--v1.png" alt="star--v1"/><img src="https://img.icons8.com/windows/FAC738/30/star--v1.png" alt="star--v1"/>
+                </div>
+
+                <div class="item-content">
+                    <p>“Além do corte perfeito, o ambiente faz toda diferença. Limpeza, música boa e atendimento rápido. Dá vontade de voltar toda semana.”</p>
+                    <span>Leonardo</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="title">Contato</h2>
+
+        <div class="container">
+            <div class="contact-content">
+                <form method="POST" id="contact-form">
+                    <span>Nome</span>
+                    <input type="text" name="name" id="name" required placeholder="Nome Completo" maxlength="70">
+
+                    <span>Email</span>
+                    <input type="email" name="email" id="email" required placeholder="SeuEmail@gmail.com" maxlength="70">
+
+                    <span>Assunto</span>
+                    <input type="text" name="subject" id="subject" required placeholder="Assunto" maxlength="50">
+
+                    <span>Mensagem</span>
+                    <textarea name="message" id="message" required placeholder="Escreva sua mensagem aqui..." maxlength="300"></textarea>
+
+                    <button id="submitButton" type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer">
+        <div class="container">
+            <div class="social-networks">
+                <div class="logo">
+                    <a href="#"><img src="assets/icon-logo.png" alt="logo-barberdev"> BarberDev</a>
+                </div>
+
+                <div class="icons-footer">
+                    <a href="https://wa.me/16992015035" target="_blank">
+                        <img src="https://img.icons8.com/windows/ababab/25/whatsapp.png" alt="twitter"/>
+                    </a>
+
+                    <a href="https://www.instagram.com/leofreitas.p/" target="_blank">
+                        <img src="https://img.icons8.com/windows/ababab/25/instagram-new.png" alt="instagram-new"/>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-contacts">
+                <span>Contato</span>
+                <p>Telefone: (16) 99201-5035</p>
+                <p>Email:<br>barberDev@gmail.com</p>
+                <p>Endereço: Rua dos Devs, 123,<br> São Paulo - SP</p>
+            </div>
+
+            <div class="footer-opening-hours">
+                <span>Horário de Funcionamento</span>
+                <p>Segunda a Sexta: 9h - 20h</p>
+                <p>Sábado: 9h - 18h</p>
+                <p>Domingo: fechado</p>
+            </div>
+
+            <div class="quick-links">
+                <span>Links Rápidos</span>
+                <a href="#">Início</a>
+                <a href="#services">Serviços</a>
+                <a href="#testimonials">Depoimentos</a>
+                <a href="#contact">Contato</a>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2025 BarberDev. Todos os direitos reservados.</p>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

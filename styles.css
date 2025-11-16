@@ -1,0 +1,330 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Work Sans", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #1A1A1A;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 5rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-bottom:1px solid #757575;
+    background-color: #1A1A1A;
+}
+
+header .logo a{
+    display: flex;
+    color: #fff;
+    align-items: center;
+    gap: 10px;
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+header .navBar nav {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    align-items: center;
+}
+
+header .navBar a {
+    color: #fff;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+header .navBar a:hover {
+    color: #b7b7b7;
+}
+
+header .navBar .header-button {
+    padding: 0.8rem 1.3rem;
+    background-color: #FAC738;
+    border: none;
+    border-radius: 15px;
+    color: #000 !important;
+    font-weight: 600;
+}
+
+header .navBar .header-button:hover {
+    box-shadow: 1px 1px 10px #FAC738;
+}
+
+section {
+    padding: 3rem 10rem;
+}
+
+#hero .container {
+    position: relative;;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(https://images.unsplash.com/photo-1596728325488-58c87691e9af?q=80&w=1173&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) center / cover;
+    height: 80vh;
+    text-align: center;
+    color: #fff;
+    border-radius: 15px;
+}
+
+#hero .container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 80vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    border-radius: 15px;
+}
+
+#hero .container .hero-content {
+    z-index: 2;
+}
+
+#hero .container .hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 0.8rem;
+}
+
+#hero .container .hero-content p {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+#hero .container .hero-content .hero-button {
+    padding: 0.8rem 1.3rem;
+    border: 2px solid #FAC738;
+    border-radius: 15px;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+#hero .container .hero-content .hero-button:hover {
+    padding: 1rem 1.5rem;
+    transition: 0.3s ease;
+    background-color: #FAC738;
+    box-shadow: 1px 1px 10px #FAC738;
+}
+
+.title {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 1.7rem;
+}
+
+#services .gridCardServices {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.7rem;
+}
+
+#services .gridCardServices .item {
+    padding: 20px 16px;
+    background-color: #262626;
+    border: 1px solid #4D4D4D;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#services .gridCardServices .item:hover {
+    background-color: #4D4D4D;
+    transform: scale(1.03);
+    transition: 0.3s ease;
+}
+
+#services .gridCardServices .item .item-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #fff;
+    gap: 10px
+}
+
+#services .gridCardServices .item .item-content span {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+
+#services .gridCardServices .item .item-content p {
+    font-weight: 200;
+}
+
+#testimonials .gridCardTestimonials {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+#testimonials .gridCardTestimonials .item {
+    padding: 20px 16px;
+    background-color: #262626;
+    border: 1px solid #4D4D4D;
+    border-radius: 10px;
+}
+
+#testimonials .gridCardTestimonials .item .item-content {
+    color: rgba(255,255,255,0.7);
+}
+
+#testimonials .gridCardTestimonials .item .item-content p {
+    font-weight: 400;
+    margin: 1rem 0;
+}
+
+#testimonials .gridCardTestimonials .item .item-content span {
+    color: #fff;
+    font-weight: 800;
+}
+
+#contact .contact-content form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#contact .contact-content form span {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+#contact .contact-content form input {
+    width: 500px;
+    padding: 0.8rem 1rem;
+    margin-bottom: 25px;
+    outline: none;
+    background-color: #4D4D4D;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+}
+
+#contact .contact-content form input::placeholder {
+    color: #fff;
+    font-weight: 300;
+}
+
+#contact .contact-content form textarea {
+    background-color: #4D4D4D;
+    width: 500px;
+    padding: 0.8rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    color: #fff;
+    resize: vertical;
+    margin-bottom: 1.5rem;
+}
+
+#contact .contact-content form textarea::placeholder {
+    color: #fff;
+    font-weight: 300;
+}
+
+#contact .contact-content form button {
+    padding: 0.8rem 1.5rem ;
+    background-color: #FAC738;
+    color: rgb(0, 0, 0, 0.9);
+    font-weight: 800;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+}
+
+#contact .contact-content form button:hover {
+    background-color: #262626;
+    border: 2px solid #4D4D4D;
+    transition: background-color 0.2s ease;
+    transition: border 0.1s ease;
+    color: #fff;
+}
+
+#contact .contact-content form button:active {
+    background-color: #4D4D4D;
+}
+
+#footer {
+    background-color: #262626;
+}
+
+#footer .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-bottom: 2rem;
+}
+
+#footer .container span {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+#footer .container p {
+    color: rgba(255,255,255,0.6);
+}
+
+#footer .container .social-networks .logo {
+    margin-bottom: 8px;
+}
+
+#footer .container .social-networks a {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+#footer .container .quick-links {
+    display: flex;
+    flex-direction: column;
+}
+
+#footer .container .quick-links a {
+    color: rgba(255,255,255,0.6);
+    margin-top: 5px;
+}
+
+#footer .container .quick-links a:hover {
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+#footer .container .footer-contacts p{
+    margin-top: 8px;
+}
+
+#footer .container .footer-opening-hours p {
+    margin-top: 8px;
+}
+
+#footer .copyright {
+    text-align: center;
+    border-top: 1px solid #4D4D4D;
+    color: rgba(255,255,255,0.6);
+    font-size: 0.9rem;
+}
+
+#footer .copyright p {
+    margin-top: 2rem;
+}
