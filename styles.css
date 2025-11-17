@@ -36,6 +36,52 @@ header .logo a{
     font-size: 1.2rem;
 }
 
+header .hamburguer-menu {
+    display: none;
+    position: relative;
+}
+
+header .hamburguer-menu menu .nav-links-burguer {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    text-align: end;
+    top: 40px;
+    right: 6%;
+    background-color: #262626;
+    border-radius: 8px;
+    box-shadow: 1px 1px 10px #4D4D4D;
+    display: none;
+    opacity: 0;
+    transition: 0.3s ease;
+    z-index: 3;
+    width: 12rem;
+}
+
+header .hamburguer-menu menu .nav-links-burguer .link-burguer {
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 500;
+    border-bottom: 1px solid #4D4D4D;
+    padding: 0.8rem;
+}
+
+header .hamburguer-menu menu .nav-links-burguer .link-burguer:hover {
+    color: #fff;
+    background-color: #4D4D4D;
+    transition: 0.5s ease;
+}
+
+header .hamburguer-menu menu .nav-links-burguer .link-burguer:nth-child(1) {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+header .hamburguer-menu menu .nav-links-burguer .link-burguer:nth-child(5) {
+    border: none;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
 header .navBar nav {
     display: flex;
     list-style: none;
@@ -149,6 +195,10 @@ section {
     background-color: #4D4D4D;
     transform: scale(1.03);
     transition: 0.3s ease;
+}
+
+#services .gridCardServices .item:active {
+    background-color: #707070;
 }
 
 #services .gridCardServices .item .item-content {
@@ -327,4 +377,139 @@ section {
 
 #footer .copyright p {
     margin-top: 2rem;
+}
+
+.mask {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+}
+@media (max-width: 1000px) {
+    section {
+        padding: 1rem 5rem;
+    }
+
+    header {
+        padding: 1rem 1.5rem;
+    }
+
+    header .navBar {
+        display: none;
+    }
+
+    header .logo {
+        display: block;
+        margin: 0 auto;
+    }
+
+    header .hamburguer-menu {
+        display: block;
+    }
+
+    #hero .container {
+        height: 70vh;
+    }
+
+    #hero .container::before {
+        height: 70vh;
+    }
+
+    #services .gridCardServices {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #testimonials .gridCardTestimonials {
+        grid-template-columns: 1fr;
+    }
+
+    #contact .contact-content form input {
+        width: 100%;
+    }
+
+    #contact .contact-content form textarea {
+        width: 100%;
+    }
+
+    #footer .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    section {
+        padding: 1rem 2rem;
+    }
+
+    header {
+        padding: 1rem 1.5rem;
+    }
+
+    header .navBar {
+        display: none;
+    }
+    header .logo {
+        display: block;
+        margin: 0 auto;
+    }
+
+    header .hamburguer-menu {
+        display: block;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    #hero .container {
+        height: 70vh;
+    }
+
+    #hero .container::before {
+        height: 70vh;
+    }
+
+    #hero .container .hero-content h2 {
+        font-size: 2.5rem;
+    }
+
+    #hero .container .hero-content p {
+    font-size: 1rem;
+    }
+
+    #hero .container .hero-content .hero-button {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    #hero .container .hero-content .hero-button:hover {
+        padding: 0.8rem 1.2rem;
+    }
+
+    #services .gridCardServices {
+        grid-template-columns:1fr;
+    }
+
+    #services .gridCardServices .item .item-content span {
+    font-size: 1rem;
+}
+
+    #testimonials .gridCardTestimonials {
+        grid-template-columns: 1fr;
+    }
+
+    #contact .contact-content form input {
+        width: 100%;
+    }
+
+    #contact .contact-content form textarea {
+        width: 100%;
+    }
+
+    #footer .container {
+        grid-template-columns: 1fr;
+    }
 }

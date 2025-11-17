@@ -1,3 +1,5 @@
+// FORMULÁRIO DE CONTATO COM EMAILJS E TOASTIFY
+
 emailjs.init({
     publicKey: "p9wehN3YoCT36SLZ7",
 });
@@ -50,4 +52,23 @@ document.getElementById('contact-form').addEventListener('submit', function (eve
         })
         
 
+})
+
+// FIM DO FORMULÁRIO DE CONTATO COM EMAILJS E TOASTIFY
+
+
+// MENU HAMBURGUER
+const hamburguerMenu = document.querySelector('.hamburguer-menu');
+const navLinks = document.querySelector('.nav-links-burguer')
+const mask = document.querySelector('.mask');
+
+hamburguerMenu.addEventListener('click', () => {
+    navLinks.style.display = 'flex'
+    navLinks.style.opacity = 1;
+    mask.style.zIndex = 2
+
+    mask.addEventListener('click', () => {
+        navLinks.style.display = 'none';
+        mask.style.zIndex = -1;
+    })
 })
