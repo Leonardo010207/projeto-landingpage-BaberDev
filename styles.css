@@ -4,6 +4,7 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: "Work Sans", sans-serif;
+    user-select: none;
 }
 
 html {
@@ -531,7 +532,7 @@ section {
 
     #services .gridCardServices .item .item-content span {
     font-size: 1rem;
-}
+    }
 
     #testimonials .gridCardTestimonials {
         grid-template-columns: 1fr;
